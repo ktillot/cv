@@ -18,15 +18,31 @@
 				line-height: 2.0rem;	
 	       	}
 	       	.mlist li{
-				list-style-type : circle;
+				list-style-type: circle;
 				margin-left: 50px;
 	       	}
-	       	.souscontenu{
-	       		margin-left: 25px;
+       		.souscontenu{
+	       		margin-left: 0px;
 	       	}
 	       	.souscontenu span{
-	       		margin-left: 35px;
+	       		margin-left: 0px;
 	       	}
+
+	       	@media screen and (min-width: 600px) {
+		       	.souscontenu{
+		       		margin-left: 25px;
+		       	}
+		       	.souscontenu span{
+		       		margin-left: 35px;
+		       	} 	
+		    }
+
+			@media screen and (max-width: 600px) {
+		     .parallax-container {
+			      height: 570px;
+			    }
+			}
+
 	       	.secondary-content{
 	       		color:#1e88e5;
 	       	}
@@ -42,15 +58,15 @@
 
     <body>
 
- 		<div class="fixed-action-btn" style="top: 45px; right: 24px;">
-          <a class="btn-floating btn-large red" href="https://drive.google.com/open?id=0B3Qz_6m44l73OWtWSzk2clpaVXM&authuser=0">
+ 		<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+          <a class="btn-floating btn-large red" href="https://docs.google.com/viewer?url=https%3A%2F%2Fgithub.com%2Fsuperchauzette%2Fcv%2Fraw%2Fmaster%2FCV%2520Kevin%2520Tillot%2520Informatique.docx">
             CV
           </a>
         </div>
 
 		<div class="parallax-container">
 			<h1 class="orange-text text-darken-2 mtitre">Ingénieur d’Etude et Développement</h1>
-			<h5 class="grey-text text-darken-1 mtitre">Java EE, JavaScript, HTML5, CSS3</h5>
+			<h5 class="orange-text text-darken-1 mtitre">Java EE, JavaScript, HTML5, CSS3</h5>
 			<br>
 			<div class="row container">
 			  	<div class="col s12 m8 offset-m2 l6 offset-l3" >
@@ -435,7 +451,7 @@
 		<div class="section blue-grey">
 			<div class="footer-copyright">
 		      <div class="container">
-		      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+		      	Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
 		      </div>
 		    </div>
 		</div>     
@@ -445,9 +461,9 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
       <script type="text/javascript">
 
-      	  $(document).ready(function(){
-		      $('.parallax').parallax();
-		  });
+		$(document).ready(function(){
+			$('.parallax').parallax();
+		});
 
       </script>
     </body>
